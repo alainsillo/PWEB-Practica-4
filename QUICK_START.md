@@ -26,7 +26,8 @@ git clone https://github.com/alainsillo/PWEB-Practica-4.git source && \
 git clone https://github.com/alainsillo/programacion_web_final.git target && \
 cd target && \
 mkdir -p practica4-galeria && \
-cp ../source/index.html ../source/image_*.{jpg,png} practica4-galeria/ && \
+cp ../source/index.html practica4-galeria/ && \
+cp ../source/image_*.* practica4-galeria/ && \
 git add practica4-galeria/ && \
 git commit -m "Add Practica 4: Galería de Ariana Grande" && \
 git push origin main && \

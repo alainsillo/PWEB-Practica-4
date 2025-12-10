@@ -48,7 +48,7 @@ git clone https://github.com/alainsillo/programacion_web_final.git target
 cd target
 mkdir -p practica4-galeria
 cp ../source/index.html practica4-galeria/
-cp ../source/image_*.{jpg,png} practica4-galeria/
+cp ../source/image_*.* practica4-galeria/
 ```
 
 3. Commit and push:

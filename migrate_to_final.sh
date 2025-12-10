@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # Migration script to copy content to programacion_web_final repository
 # Usage: ./migrate_to_final.sh <path_to_target_repo>
@@ -27,12 +27,9 @@ mkdir -p "$DEST_DIR"
 # Copy all files
 echo "Copying files..."
 cp index.html "$DEST_DIR/"
-cp image_1.jpg "$DEST_DIR/"
-cp image_2.png "$DEST_DIR/"
-cp image_3.jpg "$DEST_DIR/"
-cp image_4.jpg "$DEST_DIR/"
-cp image_5.png "$DEST_DIR/"
-cp image_6.jpg "$DEST_DIR/"
+for img in image_*.*; do
+    [ -f "$img" ] && cp "$img" "$DEST_DIR/"
+done
 
 echo "Files copied to $DEST_DIR"
 echo ""
